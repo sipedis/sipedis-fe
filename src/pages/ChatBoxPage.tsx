@@ -1,6 +1,10 @@
+import React from 'react';
+import ChatBox from '../component/chatbox';
 
 export default function ChatBoxPage() {
     return (
-        <div>ChatBoxPage</div>
+        <div className="">
+            <ChatBox />
+        </div>
     )
 }
