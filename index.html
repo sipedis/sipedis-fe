@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-cyan-100 to-green-100 min-h-screen flex font-sans">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-lg flex flex-col justify-between">
+    <div>
+      <h1 class="text-2xl font-bold px-6 py-6 text-teal-900">SIPEDIS</h1>
+      <nav class="px-6">
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-teal-600">
+                 <img src="home.png" alt="Home" class="w-6 h-6" />
+                <span>Home</span>
+  </a>
+</li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-teal-600">
+                <img src="chat.png" alt="Chat Box" class="w-6 h-6" />
+                <span>Chat Box</span>
+  </a>
+</li>
+
+          <li>
+            <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-teal-600">
+                <img src="about.png" alt="Home" class="w-6 h-6" />
+                <span>About Us</span>
+  </a>
+</li>
+
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Footer Sidebar -->
+    <div class="px-6 py-4 space-y-2">
+      <div class="flex items-center bg-cyan-100 p-2 rounded-lg gap-2">
+        <img src="profile.png" alt="Profile" class="w-8 h-8 rounded-full" />
+        <span class="text-teal-700 font-medium text-sm">tralalelo tralala</span>
+      </div>
+      <div class="flex items-center gap-2 text-gray-600 hover:text-red-600 cursor-pointer">
+        <img src="logout.png" alt="Logout" />
+        <span>Logout</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="flex-1 p-10 flex flex-col">
+  <h2 class="text-2xl font-semibold text-teal-900 mb-6">Profile</h2>
+  <div class="flex-grow flex items-center justify-center">
+    <div class="bg-white rounded-2xl shadow-md w-full h-[500px] flex flex-col items-center justify-center">
+      <img src="profile.png" class="w-32 h-32 object-cover mb-4 rounded-full">
+      <p class="text-teal-600 text-lg font-medium">tralalelo tralala</p>
+    </div>
+  </div>
+</main>
+
+  
+</body>
+</html>
