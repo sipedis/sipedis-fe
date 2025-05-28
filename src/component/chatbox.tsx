@@ -13,7 +13,7 @@ const ChatBox: React.FC = () => {
   const params = useParams<{ roomId?: string }>();
   const navigate = useNavigate();
 
-  const roomId = params.roomId || null; // langsung dari URL params
+  const roomId = params.roomId || null;
 
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>([

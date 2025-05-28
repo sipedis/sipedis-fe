@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { Link, useNavigate, useParams } from "react-router-dom";  // <-- import useParams
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../utils/AuthContext";
 
 interface Room {
@@ -16,7 +16,7 @@ export default function Navbar() {
   const userMenuRef = useRef<HTMLDivElement>(null);
 
   const params = useParams<{ roomId?: string }>();
-  const currentRoomId = params.roomId || null; // dapatkan roomId dari URL
+  const currentRoomId = params.roomId || null;
 
   useEffect(() => {
     const token = localStorage.getItem("token");
