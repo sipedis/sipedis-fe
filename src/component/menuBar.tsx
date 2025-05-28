@@ -23,7 +23,7 @@ export default function Navbar() {
     if (!token) return;
 
     axios
-      .get("http://localhost:8080/chat/rooms", {
+      .get("https://sipedis-be-production.up.railway.app/chat/rooms", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setRooms(res.data.data))

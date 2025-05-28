@@ -18,7 +18,7 @@ export default function RegisterPage() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8080/signup", {
+      const response = await axios.post("https://sipedis-be-production.up.railway.app/signup", {
         name,
         email,
         password,
