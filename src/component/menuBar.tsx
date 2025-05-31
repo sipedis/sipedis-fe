@@ -113,7 +113,6 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* User logo + popup logout */}
         <div ref={userMenuRef} className="relative">
           <button
             onClick={() => setShowUserMenu(!showUserMenu)}
@@ -125,6 +124,12 @@ export default function Navbar() {
 
           {showUserMenu && (
             <div className="absolute bottom-14 left-0 bg-white border border-gray-300 rounded shadow-md w-36 py-2 z-50">
+              <Link
+                to='/profile'
+                className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-100"
+              >
+                Profile
+              </Link>
               <button
                 onClick={handleLogout}
                 className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-100"
