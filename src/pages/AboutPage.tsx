@@ -30,19 +30,19 @@ export default function AboutPage() {
 
             {/* Daftar Goals */}
             <div className="flex flex-col space-y-6 w-full md:w-3/4">
-              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md">
+              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
                 <div className="text-2xl">💡</div>
                 <p>
                   Meningkatkan kesadaran dini terhadap gejala kanker
                 </p>
               </div>
-              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md">
+              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
                 <div className="text-2xl">📖</div>
                 <p>
                   Menyediakan layanan konsultasi cepat dan efisien melalui chatbot AI.
                 </p>
               </div>
-              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md">
+              <div className="flex items-start gap-4 p-3 bg-teal-500 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
                 <div className="text-2xl">🔍</div>
                 <p>
                   Membantu pengguna mengenali potensi penyakit secara mandiri sebelum pemeriksaan medis lanjutan.
