@@ -13,7 +13,7 @@ const ChatBox: React.FC = () => {
   const params = useParams<{ roomId?: string }>();
   const navigate = useNavigate();
 
-  const roomId = params.roomId || null; // langsung dari URL params
+  const roomId = params.roomId || null;
 
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
@@ -46,7 +46,7 @@ const ChatBox: React.FC = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get(`http://localhost:8080/chat/${roomId}`, {
+        const response = await axios.get(`https://sipedis-be-production.up.railway.app/chat/${roomId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -96,7 +96,7 @@ const ChatBox: React.FC = () => {
       const token = localStorage.getItem("token");
       if (!token) return;
 
-      const response = await axios.post(`http://localhost:8080/chat`, body, {
+      const response = await axios.post(`https://sipedis-be-production.up.railway.app/chat`, body, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -24,7 +24,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
         }
 
         axios
-            .get("http://localhost:8080/me", {
+            .get("https://sipedis-be-production.up.railway.app/me", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
